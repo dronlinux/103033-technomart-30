@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Андрей Порядин](https://up.htmlacademy.ru/htmlcss/30/user/103033).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
