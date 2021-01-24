@@ -15,18 +15,11 @@
                 <label for="search-search">Поиск:</label>
                 <input id="search-search" type="search" name="searchQuery">
             </form>
-            <ul>
-                <li>
-                    <img src="https://via.placeholder.com/14x16" alt="icon bookmark">
-                    <a href="#">Закладки: 0</a>
-                </li>
-                <li>
-                    <img src="https://via.placeholder.com/15x15" alt="icon cart">
-                    <a href="#">Корзина: 0</a>
-                </li>
-                <li><a href="#">Оформить заказ</a></li>
-            </ul>
-
+            <div>
+                <a href="#">Закладки: 0</a>
+                <a href="#">Корзина: 0</a>
+                <a href="#">Оформить заказ</a>
+            </div>
         </section>
         <section>
             <h1>
@@ -94,11 +87,10 @@
             </ul>
         </section>
         <section>
-            <h2 hidden>Популярные товары</h2>
-            <header>
-                <span>ПОПУЛЯРНЫЕ ТОВАРЫ:</span>
+            <div>
+                <h2>Популярные товары</h2>
                 <a href="#">Все популярные товары</a>
-            </header>
+            </div>
             <ul>
                 <li>
                     <a href="#">
@@ -160,11 +152,10 @@
 
         </section>
         <section>
-            <h2 hidden>Популярные производители</h2>
-            <header>
-                <span>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</span>
+            <div>
+                <h2>Популярные производители</h2>
                 <a href="#">Все производители</a>
-            </header>
+            </div>
             <ul>
                 <li>
                     <a href="#">
@@ -262,7 +253,7 @@
             <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
             <a href="#"><img src="https://via.placeholder.com/200x100" alt="Адрес на карте: Большая Конюшенная ул.19"></a>
-            <button type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+            <a href="#">Заблудились? Напишите нам!</a>
         </section>
 
     </main>
@@ -284,7 +275,7 @@
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
-            <nav>
+            <nav class="footer__goods-nav">
                 <ul>
                     <li><a href="#">Материалы</a></li>
                     <li><a href="#">Техника</a></li>
