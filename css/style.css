@@ -1,0 +1,566 @@
+/* COMMON */
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+       url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+       url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+       url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+       url("../fonts/cuprumbolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #EE3643;
+  --blue: #32425C;
+  --charcoal: #1D2739;
+  --white-translucent: rgba(255, 255, 255, 0.5);
+  --white-more-transparent: rgba(255, 255, 255, 0.3);
+  --grey: #C5C5C5;
+  --light-grey: #F1F5F7;
+  --light-yellow: #FFBF47;
+  --light-blue: #3BBCE3;
+  --light-liliac: #DC91D8;
+  --light-green: #8ED78F;
+  --grey-transparent: rgba(197, 197, 197, 0.3);
+  --dark-grey-transparent: rgba(169, 169, 169, 0.3);
+  --green: #63A63E;
+  --green-hover: #5FBB2D;
+  --green-click: #518534;
+
+   /* header */
+   --dark-blue: #293449;
+   --red-active: #BA2732;
+   --green-main: #63A63E;
+   --green-hover: #5FBB2D;
+   --blue-darker: #161D29;
+
+   /* main */
+   --background-light-beige: #F9F5F0;
+   --dark-red: #CA2C37;
+   --dark-grey: #A9A9A9;
+   --smoke: #EAEAEA;
+
+
+   /* footer */
+   --smoky-white: #F3F7F9;
+   --lighter-yellow: #FFD180;
+
+}
+
+.page {
+  min-width: 960px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  background-color: var(--white);
+  color: var(--blue);
+  height: 100%;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+
+.main-header {
+  color: var(--white);
+}
+
+.main-header-top {
+  background-color: var(--dark-blue);
+}
+
+.main-header-logo {
+  background-color: var(--red);
+}
+
+.main-header-logo:active,
+.main-header-logo:focus {
+  background-color: var(--red-active);
+}
+
+.search-text {
+  font: inherit;
+  background-color: var(--blue);
+  border: none;
+  color: var(--white);
+}
+
+.search-text:focus {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.bookmarks-link {
+  color: var(--white);
+}
+
+.bookmarks-link:focus {
+    color: var(--white-translucent);
+    background-color: var(--blue-darker);
+}
+
+.basket-link {
+  color: var(--white);
+}
+
+.basket-link:focus {
+  color: var(--white-translucent);
+}
+.order-link {
+  background-color: var(--green-main);
+}
+
+.order-link:hover {
+  background-color: var(--green-hover);
+}
+
+.order-link:active,
+.order-link:focus {
+  color: var(--white-translucent);
+  background-color: var(--green-main);
+}
+
+.main-header-bottom {
+  background-color: var(--light-grey);
+}
+
+.main-header-description {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  color: var(--red);
+}
+
+.main-header-tel {
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--red);
+  background-color: var(--light-grey);
+  border: 3px solid var(--white);
+  box-sizing: border-box;
+}
+
+.main-header-address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: var(--blue);
+}
+
+.main-header-button {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+  background-color: var(--white);
+  font-weight: 400;
+}
+
+.sign-in:hover,
+.sign-reg:hover {
+    color: var(--red);
+}
+
+.sign-in:active,
+.sign-reg:active,
+.sign-in:focus,
+.sign-reg:focus {
+    color: var(--grey);
+}
+
+.main-nav-list {
+  font-size: 18px;
+  list-style-type: none;
+  background-color: var(--blue);
+}
+
+.main-nav a {
+  color: var(--white);
+}
+
+.main-nav a:hover {
+  background: var(--blue);
+}
+
+.main-nav a:active,
+.main-nav a:focus {
+  background: var(--charcoal);
+  opacity: 50%;
+}
+
+/* MAIN */
+
+.container {
+  width: 940px;
+}
+
+.promo-block {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+
+.promo-list {
+  color: var(--white);
+}
+
+.promo-item {
+  height: 123px;
+}
+
+.prom-item h3 {
+  font-size: 24px;
+}
+
+.promo-item-description {
+  background-color: var(--white-more-transparent);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.promo-item-description:hover {
+  background-color: var(--grey-transparent);
+}
+
+.promo-item-description:active,
+.promo-item-description:focus {
+  background-color: var(--dark-grey-transparent);
+}
+
+.promo-materials {
+  background-color: var(--light-yellow);
+}
+
+.promo-tools {
+  background-color: var(--light-blue);
+}
+
+.promo-technics {
+  background-color: var(--light-liliac);
+}
+
+.promo-sale {
+  background-color: var(--light-green);
+}
+
+.promo-delivery {
+  background-color: var(--light-yellow);
+}
+
+.catalog-header {
+  background-color: var(--background-light-beige);
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--blue);
+}
+
+.catalog-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.catalog-item del {
+  color: var(--dark-grey);
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px var(--grey);
+}
+
+.catalog-item:hover .catalog-buy-button{
+  visibility: visible;
+}
+
+.catalog-item:hover .catalog-bookmark-button{
+  visibility: visible;
+}
+
+.catalog-item:hover img{
+  visibility: hidden;
+}
+
+.catalog-price-number {
+  width: 122px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 17px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+.catalog-buy-button {
+  background-color: var(--green);
+  color: var(--white);
+  width: 135px;
+  height: 38px;
+  visibility: hidden;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+}
+
+.catalog-bookmark-button {
+  border: 3px solid var(--green);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--white);
+  color: var(--blue);
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.catalog-bookmark-button:hover {
+  border: 3px solid var(--blue);
+}
+
+.catalog-bookmark-button:active,
+.catalog-bookmark-button:focus {
+  border: 3px solid var(--blue);
+  opacity: 0.5;
+}
+
+.manufacturers-list {
+   list-style: none;
+}
+
+.manufacturer-item {
+  border: 1px solid var(--smoke);
+  height: 145px;
+  width: 220px;
+  box-sizing: border-box;
+}
+
+.services-block {
+  color: var(--black);
+}
+
+.services-block p {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services-block h2,
+.services-block h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.manufacturer-item:hover {
+  box-shadow: 0 0 10px var(--grey);
+}
+
+.company-info-block h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.company-info-block p {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.company-info-block ul {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ccompany-info-block li {
+  list-style-type: none;
+}
+
+.company-contacts {
+    color: var(--black);
+}
+
+.company-contacts h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.company-contacts p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
+.button {
+  background-color: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--dark-red);
+}
+
+.button:active,
+.button:focus {
+  background-color: var(--red-active);
+}
+
+/* FOOTER */
+
+.main-footer-top {
+  background-color: var(--blue);
+}
+
+.main-footer-logo {
+  color: var(--white);
+  background-color: var(--red);
+  box-sizing: border-box;
+}
+
+.main-footer-nav a {
+  color: var(--light-grey);
+}
+
+.main-footer-nav a:hover,
+.main-footer-nav-categories a:hover{
+    text-decoration: underline;
+}
+
+.main-footer-nav a:active,
+.main-footer-nav a:focus,
+.main-footer-nav-categories a:active,
+.main-footer-nav-categories a:focus{
+    opacity: 0.5;
+}
+
+.footer-address,
+.footer-phone-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--smoky-white);
+    font-style: normal;
+    font-family: "Cuprum", "Tahoma", sans-serif;
+    font-weight: 400;
+}
+
+.main-footer-nav-categories a {
+  color: var(--lighter-yellow);
+}
+
+.main-footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.footer-social-list li{
+  list-style: none;
+}
+
+.footer-social-list a {
+  color: var(--white);
+}
+
+.footer-social-item {
+  color: inherit;
+}
+
+.footer-social-item:hover,
+.footer-social-item:active,
+.footer-social-item:focus{
+  background-color: var(--red);
+}
+
+.footer-mail-link,
+.footer-createdin-link {
+    color: var(--lighter-yellow);
+}
+
+.footer-mail-link:hover,
+.footer-createdin-link:hover {
+    text-decoration: underline;
+}
+
+.footer-mail-link:active,
+.footer-createdin-link:active,
+.footer-mail-link:focus,
+.footer-createdin-link:focus {
+    color: var(--red);
+}
