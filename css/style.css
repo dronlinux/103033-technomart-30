@@ -517,6 +517,48 @@
   background-color: var(--red-active);
 }
 
+/* CATALOG PAGE*/
+
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.breadcrumbs-item {
+  text-transform: uppercase;
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+}
+
+
+
+
+.punchers-info {
+  background-color: var(--light-grey);
+  color: var(--black);
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+}
+
+.punchers-info p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.punchers-info-header {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+}
+
 /* FOOTER */
 
 .main-footer-top {
