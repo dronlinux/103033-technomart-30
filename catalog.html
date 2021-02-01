@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+×ml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <section>
-      <a href="index.html"><img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип 'ТЕХНОМАРТ'"></a>
-      <form action="#" method="GET">
-        <img src="https://via.placeholder.com/17x17" alt="icon search">
-        <label for="search-search">Поиск:</label>
-        <input id="search-search" type="search" name="searchQuery">
-      </form>
-      <ul>
-        <li>
-          <img src="img/uikit/icon-bookmark.svg" width="14" height="16" alt="Закладки">
-          <a href="#">Закладки: 0</a>
-        </li>
-        <li>
-          <img src="img/uikit/icon-cart.svg" width="15" height="15" alt="Корзина">
-          <a href="#">Корзина: 10</a>
-        </li>
-        <li><a href="#">Оформить заказ</a></li>
-      </ul>
 
+<body class="page-body">
+  <header class="main-header">
+    <section class="main-header-top">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип 'ТЕХНОМАРТ'">
+      </a>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <span>иконка поиска</span>
+        <label for="search-search">Поиск:</label>
+        <input id="search-search" class="search-text" type="search" name="searchQuery">
+      </form>
+      <div>
+        <a href="#" class="bookmarks-link">
+          <img src="img/uikit/icon-bookmark.svg" width="14" height="16" alt="Закладки">Закладки: 0</a>
+        <a href="#" class="basket-link">
+          <img src="img/uikit/icon-cart.svg" width="15" height="15" alt="Корзина">Корзина: 0</a>
+        <a href="#" class="order-link">Оформить заказ</a>
+      </div>
     </section>
-    <section>
-      <p>
+    <section class="main-header-bottom">
+      <h1 class="main-header-description">
         Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта
-      </p>
-      <p>
-        <a href="tel:+78125550555"><img src="img/uikit/icon-phone.svg" width="17.51" height="18.97" alt="Позвонить">+7 (812) 555-05-55</a>
+      </h1>
+      <a href="tel:+78125550555" class="main-header-tel">+7 (812) 555-05-55</a>
+      <address class="main-header-address">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-      <a href="#"><img src="img/uikit/icon-user.svg" width="20" height="18" alt="Личный кабинет пользователя">Равшан Джамшутович</a>
-      <a href="#">
-        <img src="img/uikit/icon-logout.svg" width="20" height="17" alt="Выход из личного кабинета">
-      </a>
-      <ul>
-        <li>
-          <a href="#">Мои заказы</a>
-          <a href="#">Личный кабинет</a>
-        </li>
-      </ul>
+      </address>
+      <div class="main-header-user">
+        <a href="" class="header-user-name"><img src="img/uikit/icon-user.svg" width="20" height="18"
+            alt="Личный кабинет пользователя">Равшан Джамшутович</a>
+        <a href="#">
+          <img src="img/uikit/icon-logout.svg" width="20" height="17" alt="Выход из личного кабинета">
+        </a>
+      </div>
+      <a href="" class="header-user-orders">Мои заказы</a>
+      <a href="" class="header-user-account">Личный кабинет</a>
     </section>
-    <nav>
-      <ul>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -63,7 +63,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <ul>
       <li><a href="index.html"><img src="img/uikit/icon-home.svg" width="14" height="12" alt="На главную"></a></li>
       <li><img src="img/uikit/icon-right-small.svg" alt=""></li>
@@ -298,11 +298,12 @@
       </p>
     </article>
   </main>
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="main-footer-top">
       <h2 hidden>О техномарте</h2>
-      <a href="index.html"><img src="img/logo/logo-technomart.svg" width="138" height="23" alt="Логотип 'ТЕХНОМАРТ'"></a>
-      <nav>
+      <a class="main-footer-logo" href="index.html"><img src="img/logo/logo-technomart.svg" width="138" height="23"
+          alt="Логотип 'ТЕХНОМАРТ'"></a>
+      <nav class="main-footer-nav">
         <ul>
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -311,11 +312,12 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <p>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </p>
-      <nav>
+      <section class="main-footer-contacts">
+        <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <a class="footer-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      </section>
+
+      <nav class="main-footer-nav-categories">
         <ul>
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
@@ -324,31 +326,32 @@
         </ul>
       </nav>
     </section>
-    <section>
+    <section class="main-footer-bottom">
       <h2 hidden>Подвал</h2>
       <p>
         © 2010–2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
-      <ul>
-        <li>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
           <a href="#"><img src="img/uikit/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-      </li>
-      <li>
+        </li>
+        <li class="footer-social-item">
           <a href="#"><img src="img/uikit/icon-fb.svg" width="12" height="22" alt="Facebook"></a>
-      </li>
-      <li>
+        </li>
+        <li class="footer-social-item">
           <a href="#"><img src="img/uikit/icon-insta.svg" width="21" height="21" alt="Instagram"></a>
-      </li>
+        </li>
       </ul>
       <p>Обратная связь:<br>
-        <a href="#">mail@htmlacademy.ru</a>
+        <a class="footer-mail-link" href="#">mail@htmlacademy.ru</a>
       </p>
       <p>
         Разработано —<br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a class="footer-createdin-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </section>
+
   </footer>
 </body>
 

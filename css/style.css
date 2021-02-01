@@ -222,6 +222,40 @@
   background-color: var(--blue);
 }
 
+.main-header-user {
+  background: var(--white);
+  font-size: 21px;
+}
+
+.main-header-user a {
+  color: var(--black);
+}
+
+.header-user-name:active,
+.header-user-name:focus {
+  color: var(--grey);
+}
+
+.header-user-orders {
+  color: var(--black);
+}
+
+.header-user-account {
+  color: var(--black);
+}
+
+.header-user-orders:hover,
+.header-user-account:hover {
+  color: var(--red);
+}
+
+.header-user-orders:active,
+.header-user-account:active,
+.header-user-orders:focus,
+.header-user-account:focus {
+  color: var(--grey);
+}
+
 .main-nav a {
   color: var(--white);
 }
