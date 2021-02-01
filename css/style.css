@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Cuprum";
   src: url("../fonts/cuprum.woff2") format("woff2"),
-       url("../fonts/cuprum.woff") format("woff");
+    url("../fonts/cuprum.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Cuprum";
   src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-       url("../fonts/cuprumitalic.woff") format("woff");
+    url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Cuprum";
   src: url("../fonts/cuprumbold.woff2") format("woff2"),
-       url("../fonts/cuprumbold.woff") format("woff");
+    url("../fonts/cuprumbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: "Cuprum";
   src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-       url("../fonts/cuprumbolditalic.woff") format("woff");
+    url("../fonts/cuprumbolditalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
@@ -35,14 +35,15 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+    url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -67,23 +68,23 @@
   --green-hover: #5FBB2D;
   --green-click: #518534;
 
-   /* header */
-   --dark-blue: #293449;
-   --red-active: #BA2732;
-   --green-main: #63A63E;
-   --green-hover: #5FBB2D;
-   --blue-darker: #161D29;
+  /* header */
+  --dark-blue: #293449;
+  --red-active: #BA2732;
+  --green-main: #63A63E;
+  --green-hover: #5FBB2D;
+  --blue-darker: #161D29;
 
-   /* main */
-   --background-light-beige: #F9F5F0;
-   --dark-red: #CA2C37;
-   --dark-grey: #A9A9A9;
-   --smoke: #EAEAEA;
+  /* main */
+  --background-light-beige: #F9F5F0;
+  --dark-red: #CA2C37;
+  --dark-grey: #A9A9A9;
+  --smoke: #EAEAEA;
 
 
-   /* footer */
-   --smoky-white: #F3F7F9;
-   --lighter-yellow: #FFD180;
+  /* footer */
+  --smoky-white: #F3F7F9;
+  --lighter-yellow: #FFD180;
 
 }
 
@@ -140,8 +141,8 @@
 }
 
 .bookmarks-link:focus {
-    color: var(--white-translucent);
-    background-color: var(--blue-darker);
+  color: var(--white-translucent);
+  background-color: var(--blue-darker);
 }
 
 .basket-link {
@@ -151,6 +152,7 @@
 .basket-link:focus {
   color: var(--white-translucent);
 }
+
 .order-link {
   background-color: var(--green-main);
 }
@@ -204,14 +206,14 @@
 
 .sign-in:hover,
 .sign-reg:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
 .sign-in:active,
 .sign-reg:active,
 .sign-in:focus,
 .sign-reg:focus {
-    color: var(--grey);
+  color: var(--grey);
 }
 
 .main-nav-list {
@@ -241,9 +243,9 @@
 }
 
 .promo-block {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 
 }
 
@@ -336,25 +338,25 @@
   box-shadow: 0 0 10px var(--grey);
 }
 
-.catalog-item:hover .catalog-buy-button{
+.catalog-item:hover .catalog-buy-button {
   visibility: visible;
 }
 
-.catalog-item:hover .catalog-bookmark-button{
+.catalog-item:hover .catalog-bookmark-button {
   visibility: visible;
 }
 
-.catalog-item:hover img{
+.catalog-item:hover img {
   visibility: hidden;
 }
 
 .catalog-price-number {
   width: 122px;
-    background-color: var(--red);
-    color: var(--white);
-    font-size: 17px;
-    line-height: 18px;
-    box-sizing: border-box;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 17px;
+  line-height: 18px;
+  box-sizing: border-box;
 }
 
 .catalog-buy-button {
@@ -390,7 +392,7 @@
 }
 
 .manufacturers-list {
-   list-style: none;
+  list-style: none;
 }
 
 .manufacturer-item {
@@ -422,17 +424,17 @@
 }
 
 .company-info-block h2 {
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--black);
-    font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 400;
 }
 
 .company-info-block p {
-    font-family: "PT Sans", "Tahoma", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .company-info-block ul {
@@ -445,13 +447,13 @@
 }
 
 .company-contacts {
-    color: var(--black);
+  color: var(--black);
 }
 
 .company-contacts h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 400;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .company-contacts p {
@@ -498,25 +500,25 @@
 }
 
 .main-footer-nav a:hover,
-.main-footer-nav-categories a:hover{
-    text-decoration: underline;
+.main-footer-nav-categories a:hover {
+  text-decoration: underline;
 }
 
 .main-footer-nav a:active,
 .main-footer-nav a:focus,
 .main-footer-nav-categories a:active,
-.main-footer-nav-categories a:focus{
-    opacity: 0.5;
+.main-footer-nav-categories a:focus {
+  opacity: 0.5;
 }
 
 .footer-address,
 .footer-phone-link {
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--smoky-white);
-    font-style: normal;
-    font-family: "Cuprum", "Tahoma", sans-serif;
-    font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--smoky-white);
+  font-style: normal;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-weight: 400;
 }
 
 .main-footer-nav-categories a {
@@ -530,7 +532,7 @@
   background-color: var(--dark-blue);
 }
 
-.footer-social-list li{
+.footer-social-list li {
   list-style: none;
 }
 
@@ -544,23 +546,23 @@
 
 .footer-social-item:hover,
 .footer-social-item:active,
-.footer-social-item:focus{
+.footer-social-item:focus {
   background-color: var(--red);
 }
 
 .footer-mail-link,
 .footer-createdin-link {
-    color: var(--lighter-yellow);
+  color: var(--lighter-yellow);
 }
 
 .footer-mail-link:hover,
 .footer-createdin-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-mail-link:active,
 .footer-createdin-link:active,
 .footer-mail-link:focus,
 .footer-createdin-link:focus {
-    color: var(--red);
+  color: var(--red);
 }
