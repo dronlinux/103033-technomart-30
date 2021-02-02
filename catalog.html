@@ -75,19 +75,28 @@
       <li class="breadcrumbs-item"><img src="img/uikit/icon-right-small.svg" alt=""></li>
       <li class="breadcrumbs-item"><a>Перфораторы</a></li>
     </ul>
-    <h1>Перфораторы</h1>
-    <section>
-      <h2>Фильтр:</h2>
+    <h1 class="product-header">Перфораторы</h1>
+    <section class="product-filter">
+      <h2 class="filter-header">Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset>
+        <fieldset class="filter-item">
           <legend>Цена:</legend>
-          <input type="range" min="0" max="40000" step="1000" value="30000" id="range-price" name="range-price">
-          <label>От<input type="number" min="0" max="40000" value="0" name="min-price"></label>
+          <div class="filter-price-range">
+            <div class="price-range-item">
+              <input type="range" min="0" max="40000" step="1000" value="30000" id="range-price" name="range-price">
+            </div>
+          </div>
+          <div class="filter-price-item">
+            <input type="number" name="min-price" value="0">
+            <input class="input-max-price" type="number" name="max-price" value="30000">
+
+          </div>
+          <!-- <label>От<input type="number" min="0" max="40000" value="0" name="min-price"></label>
           <span> - </span>
-          <label>До<input type="number" min="1000" max="40000" value="30000" name="max-price"></label>
+          <label>До<input type="number" min="1000" max="40000" value="30000" name="max-price"></label> -->
         </fieldset>
-        <fieldset>
-          <legend>ПРОИЗВОДИТЕЛИ:</legend>
+        <fieldset class="filter-item">
+          <legend>производители:</legend>
           <ul>
             <li>
               <input type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -111,8 +120,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>ПИТАНИЕ:</legend>
+        <fieldset class="filter-item">
+          <legend>питание:</legend>
           <ul>
             <li>
               <input type="radio" name="supply" id="filter-accumulator" value="accum" checked>
