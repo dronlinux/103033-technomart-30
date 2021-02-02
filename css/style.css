@@ -155,6 +155,7 @@
 
 .order-link {
   background-color: var(--green-main);
+  color: var(--white);
 }
 
 .order-link:hover {
@@ -217,6 +218,8 @@
 }
 
 .main-nav-list {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   list-style-type: none;
   background-color: var(--blue);
@@ -274,6 +277,7 @@
 
 .container {
   width: 940px;
+  margin: 0 auto;
 }
 
 .promo-block {
@@ -427,6 +431,8 @@
 
 .manufacturers-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .manufacturer-item {
@@ -453,6 +459,40 @@
   text-transform: uppercase;
 }
 
+.services-tab-list {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-tab-item {
+  cursor: pointer;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.services-tab-item:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.tab-delivery {
+  background-color: var(--white);
+  color: var(--blue);
+  border: none;
+}
+
+.tab-guarantee,
+.tab-credit {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+
 .manufacturer-item:hover {
   box-shadow: 0 0 10px var(--grey);
 }
@@ -474,10 +514,9 @@
 .company-info-block ul {
   font-size: 18px;
   line-height: 24px;
-}
-
-.ccompany-info-block li {
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .company-contacts {
