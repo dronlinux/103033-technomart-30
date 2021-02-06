@@ -967,6 +967,11 @@
 .main-footer-logo {
   color: var(--white);
   background-color: var(--red);
+  width: 220px;
+  height: 68px;
+  text-align: center;
+  align-self: flex-start;
+  padding-top: 20px;
   box-sizing: border-box;
 }
 
