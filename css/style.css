@@ -142,8 +142,13 @@
 .main-header-top {
   display: grid;
   grid-template-columns: 220px 2fr 1fr 1fr 1fr max-content;
+  font-size: 18px;
+  line-height: 24px;
   height: 42px;
+  color: var(--white);
+  background-color: var(--dark-blue);
   align-items: center;
+  position: relative;
 }
 
 .main-header-logo {
@@ -156,27 +161,90 @@
   padding: 13px 0 7px;
 }
 
+.main-header-logo:after {
+  width: 220px;
+    height: 5px;
+    background-color: var(--red-active);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
 .main-header-logo:active,
 .main-header-logo:focus {
   background-color: var(--red-active);
 }
 
+.search-form {
+  align-self: flex-start;
+  position: relative;
+}
+
+.search-icon {
+  opacity: 0.3;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
 .search-text {
   font: inherit;
-  background-color: var(--blue);
-  border: none;
+  background-color: var(--dark-blue);
   color: var(--white);
+  border: none;
+  margin-left: 0px;
+  padding: 9px 60px 9px 40px;
+  align-self: start;
 }
 
 .search-text:focus {
   background-color: var(--white);
+  outline: none;
+  color: var(--black);
+  padding-bottom: 9px;
+}
+
+.search-text:focus+.search-icon .search-icon-path {
+  fill: var(--red);
+}
+
+.search-text:focus+.search-icon {
+  opacity: 1;
+}
+
+.search-text:focus::placeholder {
   color: var(--black);
 }
 
 .bookmarks-link {
   color: var(--white);
+  margin-left: -45px;
+  padding: 9px;
+  padding-left: 43px;
+  padding-right: 15px;
+  align-self: start;
+  justify-self: center;
+  position: relative;
 }
 
+.bookmarks-link::before {
+  content: "";
+  background-image: url(../img/uikit/icon-bookmark.svg);
+  width: 14px;
+  height: 16px;
+  position: absolute;
+  left: 21px;
+  top: 13px;
+  opacity: 0.3;
+}
+
+.bookmarks-link:hover::before {
+  opacity: 1;
+}
+
+.bookmarks-link:active,
 .bookmarks-link:focus {
   color: var(--white-translucent);
   background-color: var(--blue-darker);
@@ -184,15 +252,44 @@
 
 .basket-link {
   color: var(--white);
+  padding: 9px;
+  padding-left: 35px;
+  width: 136px;
+  padding-right: 12px;
+  margin-left: 0px;
+  margin-right: 5px;
+  align-self: start;
+  justify-self: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.basket-link::before {
+  background-image: url(../img/uikit/icon-cart.svg);
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  content: "";
+  top: 13px;
+  left: 12px;
+  opacity: 0.3;
+}
+
+.basket-link:hover::before {
+  opacity: 1;
 }
 
 .basket-link:focus {
   color: var(--white-translucent);
+  background-color: var(--blue-darker);
 }
 
 .order-link {
   background-color: var(--green-main);
   color: var(--white);
+  padding: 9px 0 9px 19px;
+  margin-left: -7px;
+  align-self: start;
 }
 
 .order-link:hover {
