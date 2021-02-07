@@ -163,12 +163,12 @@
 
 .main-header-logo:after {
   width: 220px;
-    height: 5px;
-    background-color: var(--red-active);
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+  height: 5px;
+  background-color: var(--red-active);
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 
@@ -284,6 +284,10 @@
   background-color: var(--blue-darker);
 }
 
+.basket-not-empty {
+  background-color: var(--red);
+}
+
 .order-link {
   background-color: var(--green-main);
   color: var(--white);
@@ -395,7 +399,36 @@
 
 .main-header-user {
   background: var(--white);
+  grid-column: 3/5;
+  grid-row: 1/2;
+  padding: 12px;
   font-size: 21px;
+  margin-top: 2px;
+  position: relative;
+
+}
+
+.header-user {
+  background-image: url(../img/uikit/icon-user.svg);
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+
+.header-user-name {
+  margin-left: 48px;
+}
+
+.header-user-logout {
+  background-image: url(../img/uikit/icon-logout.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .main-header-user a {
@@ -409,10 +442,32 @@
 
 .header-user-orders {
   color: var(--black);
+  margin-top: 5px;
+  margin-left: 47px;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .header-user-account {
   color: var(--black);
+  margin-top: 5px;
+  margin-left: 2px;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  position: relative;
+
+}
+
+.header-user-account::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  position: absolute;
+  left: -18px;
+  top: 7px;
+
 }
 
 .header-user-orders:hover,
@@ -856,9 +911,13 @@
 
 .breadcrumbs-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 22px;
   font-size: 13px;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
@@ -871,15 +930,63 @@
   font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
+.breadcrumbs-list li {
+  margin-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs-list li::after {
+  background-image: url(../img/uikit/icon-right-small.svg);
+  background-repeat: no-repeat;
+  content: "";
+  height: 12px;
+  width: 8px;
+  right: -25px;
+  top: 4px;
+  position: absolute;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
 .product-header {
   background-color: var(--light-grey);
-  color: var(--blue);
+  color: var(--basic-blue);
+  padding: 27px 30px 30px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 30px;
+  margin-bottom: 25px;
+  margin-top: 0px;
 }
 
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: 38px 1fr min-content;
+  gap: 20px;
+  margin-top: -5px;
+
+}
+
+.catalog-block {
+  grid-row: 2/3;
+  grid-column: 2/-1;
+  column-gap: 20px;
+  row-gap: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+
+
 .product-filter {
+  grid-row: 1/2;
+  grid-column: 1/2;
   font-family: "PT Sans", "Tahoma", sans-serif;
   color: var(--black);
   text-transform: uppercase;
@@ -887,17 +994,35 @@
 
 .filter-header {
   background-color: var(--background-light-beige);
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 10px 12px 12px 18px;
   font-weight: 400;
   font-size: 13px;
   text-transform: uppercase;
   color: var(--black);
 }
 
+.filter-item {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-bottom: 25px;
+  border: 0;
+  border-bottom: 1px solid var(--lighter-grey);
+}
+
+.filter-item:last-child,
+.filter-item:nth-last-child(2) {
+  border: none;
+  margin-bottom: 2px;
+}
+
 .filter-item label {
-  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
-  line-height: 18px;
-  display: block;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .filter-item legend {
@@ -939,31 +1064,46 @@
 }
 
 .filter-submit-button {
+  width: 220px;
+  height: 38px;
   background-color: var(--white);
   border: 1px solid var(--grey);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   font-family: "PT Sans", "Tahoma", sans-serif;
+  cursor: pointer;
 }
 
 .sort {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--beige);
+  border-radius: 3px;
+  padding-right: 10px;
   font-family: "PT Sans", "Tahoma", sans-serif;
+  margin-right: -7px;
 }
 
 .sort-header {
   font-weight: 400;
   font-size: 13px;
   text-transform: uppercase;
-  line-height: 18px;
   color: var(--black);
+  margin-left: 20px;
+  margin-top: 9px;
 }
 
 .sort-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  margin-top: 11px;
+  margin-left: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 0;
 }
 
 .sort-item {
@@ -974,7 +1114,9 @@
   cursor: pointer;
   text-transform: uppercase;
   font-size: 13px;
+  margin: 0 30px 0 35px;
   line-height: 18px;
+  padding: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
@@ -995,19 +1137,42 @@
 
 .sort-list-type {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  margin-top: 5px;
+  padding-left: 0;
+}
+
+.sort-up,
+.sort-down {
+  justify-self: flex-end;
+  margin: 0 2px;
+  width: 30px;
+}
+
+.pagination-block {
+  grid-row: 3/4;
+  grid-column: 2/-1;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  margin-top: 10px;
 }
 
 .pagination-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  grid-row: 3/4;
+  grid-column: 2/-1;
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+  margin-top: 10px;
 }
 
 .pagination-item {
   color: var(--black);
   border: 1px solid var(--lighter-grey);
+  padding: 10px 15px;
+  border-radius: 2px;
 }
 
 .pagination-next {
@@ -1026,12 +1191,14 @@
 .pagination-current {
   background-color: var(--red);
   color: var(--white);
-  /* border: 1px solid var(--red); */
+  border: 1px solid var(--red);
 }
 
 .punchers-info {
   background-color: var(--light-grey);
   color: var(--black);
+  padding: 64px 20px 55px;
+  margin-top: 55px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -1044,9 +1211,11 @@
 
 .punchers-info-header {
   text-transform: uppercase;
+  margin-top: 0;
   font-size: 30px;
   font-weight: 400;
   font-family: "Cuprum", "Tahoma", sans-serif;
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
