@@ -842,6 +842,12 @@
   padding-left: 0;
 }
 
+.company-info-block li {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-left: 37px;
+}
+
 .company-contacts {
   color: var(--black);
 }
