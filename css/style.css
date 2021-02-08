@@ -84,6 +84,7 @@
   --dark-red: #CA2C37;
   --dark-grey: #A9A9A9;
   --smoke: #EAEAEA;
+  --slider-back: rgba(0, 0, 0, 0.25);
 
 
   /* footer */
@@ -508,42 +509,52 @@
 
 .promo-block {
   font-weight: bold;
-  font-size: 24px;
+  /* font-size: 24px; */
   line-height: 30px;
   margin-top: 59px;
-
-}
-
-.promo-list {
   color: var(--white);
   display: grid;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
   grid-template-rows: min-content min-content min-content;
   gap: 20px;
   grid-template-areas:
     "mats tools tech"
-    ". . sale"
-    ". . delivery";
+    "slider slider sale"
+    "slider slider delivery";
 }
 
 .promo-item {
   height: 123px;
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 23px;
+  position: relative;
 }
 
-.prom-item h3 {
+.promo-item h3 {
   font-size: 24px;
+}
+
+.promo-item img {
+  margin-top: 30px;
+  justify-self: center;
 }
 
 .promo-item-description {
   background-color: var(--white-more-transparent);
+  grid-row: 2/3;
   text-transform: uppercase;
   color: var(--white);
   font-size: 14px;
   line-height: 18px;
+  align-self: center;
   text-align: center;
+  margin-top: -30px;
+  padding: 10px;
 }
+
+
 
 .promo-item-description:hover {
   background-color: var(--grey-transparent);
@@ -578,6 +589,79 @@
 .promo-delivery {
   grid-area: delivery;
   background-color: var(--light-yellow);
+}
+
+.slider {
+  color: var(--white);
+  grid-area: slider;
+  position: relative;
+  height: 236px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 5px;
+  padding-bottom: 16px;
+}
+
+.slider-item {
+  position: absolute;
+  padding: 0;
+}
+
+.slider-description {
+  background: var(--slider-back);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 24px;
+    padding-top: 23px;
+
+}
+
+.slider-next {
+  position: absolute;
+    background-image: url(../img/uikit/icon-slider-left.svg);
+    background-repeat: no-repeat;
+    top: 122px;
+    right: 22px;
+    width: 21px;
+    height: 40px;
+    transform: rotate(180deg);
+}
+
+.slider-prev {
+  position: absolute;
+    background-image: url(../img/uikit/icon-slider-left.svg);
+    background-repeat: no-repeat;
+    top: 123px;
+    left: 25px;
+    width: 21px;
+    height: 40px;
+}
+
+.slide-hidden {
+  visibility: hidden;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 35px;
+  left: 24px;
+  padding: 11px 46px 9px;
 }
 
 .catalog-header {
@@ -1295,7 +1379,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .footer-social-list {
