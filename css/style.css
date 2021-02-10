@@ -703,23 +703,25 @@
 
 .catalog-item {
   font-family: "PT Sans", "Tahoma", sans-serif;
-    font-weight: bold;
-    border: 1px solid var(--smoke);
-    padding: 20px;
-    text-align: center;
-    width: 220px;
-    min-height: 318px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 175px 1fr;
-    padding-top: 0;
-    position: relative;
+  font-weight: bold;
+  border: 1px solid var(--smoke);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  min-height: 318px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 175px 1fr;
+  padding-top: 0;
+  position: relative;
 }
 
 .catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
+  margin: 0;
+  margin-top: 3px;
 }
 
 .catalog-item del {
@@ -759,10 +761,53 @@
   color: var(--white);
   width: 135px;
   height: 38px;
+  position: absolute;
+  left: 50%;
+  margin-left: -67px;
+  top: 35px;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  border-radius: 3px;
   visibility: hidden;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Cuprum", "Tahoma", sans-serif;
+}
+
+.catalog-buy-button:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/uikit/icon-cart.svg);
+  left: 24px;
+  top: 10px;
+  opacity: 0.3;
+}
+
+.catalog-buy-button::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: var(--green-click);
+  border-radius: 3px;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+}
+
+.catalog-buy-button:hover {
+  background-color: var(--green-hover);
+}
+
+.catalog-buy-button:active,
+.catalog-buy-button:focus {
+  background-color: var(--green-click);
+}
+
+.services-wrapper {
+  background-color: var(--light-grey);
 }
 
 .catalog-bookmark-button {
