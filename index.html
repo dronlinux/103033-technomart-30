@@ -390,27 +390,44 @@
     </div>
 
   </footer>
-  <section class="feedback-popup">
-    <h2 hidden>Обратная связь</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label for="login-name">Ваше имя:</label>
-        <input id="login-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="login-login">Ваш e-mail:</label>
-        <input id="login-login" type="email" name="login" placeholder="email@example.com">
-      </p>
-      <p>Текст письма:</p>
-      <textarea name="message" cols="40" rows="5">В свободной форме</textarea>
-      <input type="submit" value="Отправить">
-    </form>
-  </section>
 
-  <section class="map-popup">
-    <h2 hidden>Карта</h2>
-    <button type="button">Закрыть</button>
-  </section>
+  <div class="feedback-popup-wrapper">
+    <section class="feedback-popup">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+            <ul class="feedback-input-list">
+                <li class="feedback-name-item">
+                    <label for="name" class="feedback-name" aria-label="введите ваше имя и фамилию">Ваше имя:</label>
+                    <input class="feedback-form feedback-name-input" id="name" type="text" placeholder="Имя Фамилия">
+                </li>
+                <li class="feedback-email-item">
+                    <label class="feedback-email" for="email" aria-label="введите адрес электронной почты">Ваш e-mail:</label>
+                    <input class="feedback-form feedback-email-input" id="email" type="email" placeholder="email@example.com">
+                </li>
+            </ul>
+            <div class="feedback-textarea-wrapper">
+                <label class="feedback-textarea-label" for="textarea" aria-label="Текст письма в свободной форме">Текст письма:</label>
+                <textarea class="feedback-textarea" id="textarea" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="feedback-popup-controls">
+                <button type="submit" class="button feedback-button" aria-label="Отправить форму">отправить</button>
+            </div>
+        </form>
+        <button class="feedback-popup-close" type="button" aria-label="закрыть форму обратной связи"></button>
+    </section>
+</div>
+
+<div class="map-popup-wrapper">
+    <section class="map-popup">
+      <h2 class="visually-hidden">карта с адресом ул. Большая Конюшенная 19/8, Санкт-Петербург</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="943" height="442" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
+      <button class="map-popup-close" type="button" aria-label="закрыть карту с адресом"></button>
+    </section>
+  </div>
 
 </body>
 
