@@ -131,6 +131,29 @@
   clip: rect(0 0 0 0);
 }
 
+.button {
+  background-color: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  padding: 10px;
+  width: 192px;
+  box-sizing: border-box;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--dark-red);
+}
+
+.button:active,
+.button:focus {
+  background-color: var(--red-active);
+}
+
 /* HEADER */
 
 .main-header {
@@ -810,6 +833,7 @@
   font-size: 17px;
   line-height: 18px;
   margin-top: 25px;
+  margin-bottom: 70px;
   padding: 0;
   list-style: none;
   display: grid;
@@ -839,6 +863,13 @@
   color: var(--black);
   margin: 0;
   margin-top: 3px;
+}
+
+.catalog-item img {
+  justify-self: center;
+  align-self: center;
+  margin-top: -5px;
+  margin-left: -5px;
 }
 
 .catalog-item del {
@@ -1033,9 +1064,9 @@
   align-items: center;
 }
 
-.services-wrapper {
+/* .services-wrapper {
   background-color: var(--light-grey);
-}
+} */
 
 .services-block {
   color: var(--black);
@@ -1059,6 +1090,16 @@
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.services-block h2 {
+  margin-top: 3px;
+  margin-bottom: 25px;
+}
+
+.services-block h3 {
+  margin-top: 34px;
+  margin-bottom: 30px;
 }
 
 .services-header {
@@ -1100,8 +1141,8 @@
   height: 281px;
   background-image: url(../img/service-deliver-truck.png);
   background-repeat: no-repeat;
-  right: 0;
-  bottom: -13px;
+  right: 2px;
+  bottom: 3px;
 
 }
 
@@ -1110,7 +1151,10 @@
   width: 240px;
   height: 61px;
   text-align: left;
-  padding: 5px 0 10px 25px;
+  padding-top: 17px;
+  padding-right: 0px;
+  padding-left: 23px;
+  padding-bottom: 18px;
   box-sizing: border-box;
   box-shadow: 0 1px 0 var(--dark-blue), inset 0 1px 0 var(--very-dark-blue);
 }
@@ -1118,6 +1162,10 @@
 .tab-button:hover {
   background-color: var(--dark-blue);
   color: var(--white);
+}
+
+.tab-button-active {
+  box-shadow: 0 1px 0 var(--basic-white), inset 0 1px 0 var(--basic-white);
 }
 
 .tab-delivery {
@@ -1142,7 +1190,7 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 180px;
-  margin-top: 45px;
+  margin-top: 27px;
   margin-bottom: 80px;
 }
 
@@ -1180,6 +1228,11 @@
   padding-left: 37px;
 }
 
+.company-info-block-about {
+  width: 220px;
+  padding: 10px 40px;
+}
+
 .company-contacts {
   color: var(--black);
 }
@@ -1203,33 +1256,11 @@
   background-color: var(--beige);
 }
 
-
-
-.button {
-  background-color: var(--red);
-  color: var(--white);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  border: none;
-  padding: 10px;
-  width: 192px;
-  box-sizing: border-box;
-  font-weight: 400;
-  text-align: center;
-}
-
-.button:hover {
-  background-color: var(--dark-red);
-}
-
-.button:active,
-.button:focus {
-  background-color: var(--red-active);
-}
-
 .contacts-button {
-  padding: 10px 60px;
+  padding-top: 10px;
+  padding-right: 60px;
+  padding-bottom: 9px;
+  padding-left: 63px;
 }
 
 /* CATALOG PAGE*/
@@ -1704,8 +1735,11 @@
 .main-footer-nav ul {
   display: flex;
   justify-content: space-between;
-  margin: 37px 0 20px;
-  padding: 0;
+  margin-top: 38px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 4px;
+  /* padding: 0; */
   list-style: none;
 }
 
@@ -1734,15 +1768,20 @@
   font-style: normal;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
+  padding-top: 13px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
 }
 
 .main-footer-nav-categories ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin-top: 15px;
-  margin-left: 35px;
-  padding: 0 0 54px 66px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 57px;
+  padding-left: 66px;
   font-size: 18px;
 }
 
@@ -1766,7 +1805,6 @@
 
 .footer-social-list {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   width: 125px;
@@ -1778,14 +1816,22 @@
   color: var(--white);
 }
 
+.footer-social-item:hover path:first-child,
+.footer-social-item:active path:first-child,
+.footer-social-item:focus path:first-child {
+  fill: var(--red);
+}
+
 .footer-social-item {
   color: inherit;
 }
 
-.footer-social-item:hover,
-.footer-social-item:active,
-.footer-social-item:focus {
-  background-color: var(--red);
+.footer-mail {
+  margin-left: 15px;
+}
+
+.footer-created {
+  margin-left: 44px;
 }
 
 .footer-mail-link,
