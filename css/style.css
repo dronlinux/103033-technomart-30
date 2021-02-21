@@ -566,6 +566,7 @@
 }
 
 .promo-item img {
+  grid-row: 1/3;
   margin-top: 30px;
   justify-self: center;
 }
@@ -598,9 +599,30 @@
 
 }
 
+.promo-materials::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 65px;
+  top: 31px;
+  right: 43px;
+  background-image: url(../img/uikit/bucket.svg);
+}
+
+
 .promo-tools {
   grid-area: tools;
   background-color: var(--light-blue);
+}
+
+.promo-tools::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 61px;
+  top: 34px;
+  right: 31px;
+  background-image: url(../img/uikit/screwdriver.svg);
 }
 
 .promo-technics {
@@ -608,14 +630,44 @@
   background-color: var(--light-liliac);
 }
 
+.promo-technics::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  top: 31px;
+  right: 31px;
+  background-image: url(../img/uikit/tractor.svg);
+}
+
 .promo-sale {
   grid-area: sale;
   background-color: var(--light-green);
 }
 
+.promo-sale::after {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  top: 26px;
+  right: 45px;
+  background-image: url(../img/uikit/busket.svg);
+}
+
 .promo-delivery {
   grid-area: delivery;
   background-color: var(--light-yellow);
+}
+
+.promo-delivery::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  top: 32px;
+  right: 30px;
+  background-image: url(../img/uikit/truck.svg);
 }
 
 .slider {
@@ -657,6 +709,44 @@
   padding-left: 24px;
   padding-top: 23px;
 
+}
+
+.slider-dot-controls {
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30px;
+}
+
+.slider-dot-controls button:hover {
+  opacity: 0.7;
+}
+
+.slider-dot-controls button:focus,
+.slider-dot-controls button:active {
+  opacity: 0.6;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-dot-current {
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-next {

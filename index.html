@@ -68,32 +68,32 @@
   <main>
     <div class="container">
       <section class="promo-block">
-        <h2 hidden>Промо-блок</h2>
+        <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo-item promo-materials">
           <h3>Материалы</h3>
-          <img src="img/uikit/bucket.svg" width="44" height="65" alt="Промо-блок материалы">
-          <a href="#" class="promo-item-description">на любой вкус</a>
+          <a href="#" class="promo-item-description" aria-label="Перейти в раздел Материалы">на любой вкус</a>
+          <!-- <img src="img/uikit/bucket.svg" width="44" height="65" alt="Промо-блок материалы"> -->
           <!--Оставил как напоминание-->
           <!-- <span>NEW</span> -->
         </div>
         <div class="promo-item promo-tools">
           <h3>Инструмент</h3>
-          <a href="#" class="promo-item-description">на все случаи</a>
-          <img src="img/uikit/screwdriver.svg" width="75" height="61" alt="Промо-блок инструменты">
+          <a href="#" class="promo-item-description" aria-label="Перейти в раздел инструменты">на все случаи</a>
+          <!-- <img src="img/uikit/screwdriver.svg" width="75" height="61" alt="Промо-блок инструменты"> -->
         </div>
         <div class="promo-item promo-technics">
           <h3>Техника</h3>
-          <a href="#" class="promo-item-description">для стройки</a>
-          <img src="img/uikit/tractor.svg" width="78" height="62" alt="Промо-блок техника">
+          <a href="#" class="promo-item-description" aria-label="Перейти в раздел техника">для стройки</a>
+          <!-- <img src="img/uikit/tractor.svg" width="78" height="62" alt="Промо-блок техника"> -->
         </div>
         <div class="promo-item promo-sale">
-          <h3>Скидки до 50%</h3>
-          <a href="#" class="promo-item-description">на 350 товаров</a>
-          <img src="img/uikit/busket.svg" width="59" height="72" alt="Промо-блок скидки">
+          <h3>Скидки 50%</h3>
+          <a href="#" class="promo-item-description" aria-label="Перейти в раздел товары со скидками">на 350 товаров</a>
+          <!-- <img src="img/uikit/busket.svg" width="59" height="72" alt="Промо-блок скидки"> -->
         </div>
         <div class="promo-item promo-delivery">
           <h3>Доставка</h3>
-          <a href="#" class="promo-item-description">бесплатно</a>
+          <a href="#" class="promo-item-description" aria-label="Получить информацию о бесплатной доставке">бесплатно</a>
           <img src="img/uikit/truck.svg" width="78" height="63" alt="Промо-блок доставка">
         </div>
         <div class="slider">
@@ -105,6 +105,10 @@
             <a href="#" class="slider-next"></a>
             <a href="#" class="slider-prev"></a>
             <a href="catalog.html" class="button slider-button">Открыть каталог</a>
+            <div class="slider-dot-controls">
+              <button class="slider-dot" type="button" aria-label="перейти к первому слайду"></button>
+              <button class="slider-dot slider-dot-current" type="button" aria-label="перейти ко второму слайду"></button>
+            </div>
             <img src="img/slide_man1.jpg" width="620" height="266" alt="Рабочий с перфоратором">
           </div>
           <div class="slider-item slide-hidden">
