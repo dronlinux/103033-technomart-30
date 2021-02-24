@@ -731,7 +731,6 @@
   right: 0;
   padding-left: 24px;
   padding-top: 23px;
-
 }
 
 .slider-dot-controls {
@@ -1050,7 +1049,7 @@
   list-style: none;
 }
 
-.manufacturer-item {
+.manufacturer-item, .manufacturer-item-link {
   border: 1px solid var(--smoke);
   height: 145px;
   width: 220px;
@@ -1062,6 +1061,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.manufacturer-item-link:active {
+  opacity: 0.5;
 }
 
 /* .services-wrapper {
@@ -1143,7 +1146,6 @@
   background-repeat: no-repeat;
   right: 2px;
   bottom: 3px;
-
 }
 
 .tab-button {
