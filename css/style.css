@@ -366,8 +366,6 @@
   padding: 5px 0px 5px 70px;
   box-sizing: border-box;
   position: relative;
-
-
 }
 
 .main-header-tel::before {
@@ -380,7 +378,6 @@
   top: 12px;
 }
 
-
 .main-header-address {
   font-size: 14px;
   grid-column: 2/3;
@@ -390,7 +387,6 @@
   margin-top: -1px;
   margin-left: -4px;
   color: var(--blue);
-
 }
 
 .main-header-button {
@@ -509,7 +505,6 @@
   grid-column: 4/5;
   grid-row: 2/3;
   position: relative;
-
 }
 
 .header-user-account::before {
@@ -521,7 +516,6 @@
   position: absolute;
   left: -18px;
   top: 7px;
-
 }
 
 .header-user-orders:hover,
@@ -619,7 +613,6 @@
 .promo-materials {
   grid-area: mats;
   background-color: var(--light-yellow);
-
 }
 
 .promo-materials::after {
@@ -631,7 +624,6 @@
   right: 43px;
   background-image: url(../img/uikit/bucket.svg);
 }
-
 
 .promo-tools {
   grid-area: tools;
@@ -816,7 +808,6 @@
   padding-left: 25px;
   padding-right: 15px;
 }
-
 
 .catalog-header h2 {
   font-size: 30px;
@@ -1049,7 +1040,8 @@
   list-style: none;
 }
 
-.manufacturer-item, .manufacturer-item-link {
+.manufacturer-item,
+.manufacturer-item-link {
   border: 1px solid var(--smoke);
   height: 145px;
   width: 220px;
@@ -1182,7 +1174,6 @@
   color: var(--white);
   border: none;
 }
-
 
 .manufacturer-item:hover {
   box-shadow: 0 0 10px var(--grey);
@@ -1325,7 +1316,6 @@
   grid-template-rows: 38px 1fr min-content;
   gap: 20px;
   margin-top: -5px;
-
 }
 
 .inner-catalog-list {
@@ -1955,7 +1945,6 @@
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Tahoma", sans-serif;
-  ;
   color: var(--dark-grey);
 }
 
