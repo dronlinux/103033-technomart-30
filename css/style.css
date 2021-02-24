@@ -443,6 +443,7 @@
   background-color: var(--blue);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 15px;
   padding: 0px 37px 0px 33px;
 }
@@ -1731,7 +1732,6 @@
   margin-right: 0px;
   margin-bottom: 20px;
   margin-left: 4px;
-  /* padding: 0; */
   list-style: none;
 }
 
@@ -1769,6 +1769,7 @@
 .main-footer-nav-categories ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   padding-top: 0px;
   padding-right: 0px;
