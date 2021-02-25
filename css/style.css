@@ -222,8 +222,12 @@
   color: var(--white);
   border: none;
   margin-left: 0px;
-  padding: 9px 60px 9px 40px;
+  padding-top: 9px;
+  padding-right: 30px;
+  padding-bottom: 9px;
+  padding-left: 42px;
   align-self: start;
+  width: 271px;
 }
 
 .search-text:focus {
@@ -241,8 +245,14 @@
   opacity: 1;
 }
 
-.search-text:focus::placeholder {
-  color: var(--black);
+.search-text::placeholder {
+  color: var(--white);
+}
+
+.search-text:hover + .search-icon,
+.search-icon:hover,
+.search-text:focus + .search-icon {
+  opacity: 1;
 }
 
 .bookmarks-link {
@@ -599,7 +609,10 @@
   align-self: center;
   text-align: center;
   margin-top: -30px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .promo-item-description:hover {
@@ -1085,6 +1098,7 @@
 .services-block h3 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -1242,6 +1256,7 @@
 .company-contacts p {
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
 .contacts-image {
