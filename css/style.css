@@ -70,6 +70,7 @@
   --light-green: #8ED78F;
   --grey-transparent: rgba(197, 197, 197, 0.3);
   --dark-grey-transparent: rgba(169, 169, 169, 0.3);
+  --black-light-transparent: rgba(0, 0, 0, 0.24);
   --green: #63A63E;
   --green-hover: #5FBB2D;
   --green-click: #518534;
@@ -186,18 +187,8 @@
   width: 220px;
   height: 47px;
   padding: 13px 0 7px;
+  box-shadow: inset 0 -5px var(--black-light-transparent);
 }
-
-.main-header-logo:after {
-  width: 220px;
-  height: 5px;
-  background-color: var(--red-active);
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
-
 
 .main-header-logo:active,
 .main-header-logo:focus {
@@ -1738,6 +1729,7 @@
   align-self: flex-start;
   padding-top: 20px;
   box-sizing: border-box;
+  box-shadow: inset 0 -5px var(--black-light-transparent);
 }
 
 .main-footer-nav ul {
