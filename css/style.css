@@ -1079,7 +1079,7 @@
   grid-template-columns: 240px 300px;
   column-gap: 80px;
   padding-top: 64px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -1147,7 +1147,7 @@
   background-image: url(../img/service-deliver-truck.png);
   background-repeat: no-repeat;
   right: 2px;
-  bottom: 3px;
+  bottom: -16px;
 }
 
 .tab-button {
@@ -1193,7 +1193,7 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 180px;
-  margin-top: 27px;
+  margin-top: 47px;
   margin-bottom: 78px;
 }
 
@@ -1804,7 +1804,7 @@
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 7px;
 }
 
 .footer-social-list {
