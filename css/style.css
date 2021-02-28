@@ -581,6 +581,17 @@
   position: relative;
 }
 
+.promo-item-new::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/uikit/icon-badge.svg);
+}
+
+
 .promo-item h3 {
   font-size: 24px;
 }
@@ -810,9 +821,10 @@
   margin-top: 59px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3px;
-  padding-left: 25px;
+  padding-top: 5px;
+  padding-left: 27px;
   padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 .catalog-header h2 {
@@ -828,7 +840,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 70px;
   padding: 0;
   list-style: none;
@@ -926,33 +938,16 @@
   color: var(--white);
 }
 
-.catalog-item-new::after {
+.catalog-item-new::before {
   content: "";
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--white);
   position: absolute;
+  top: 0;
   right: 0;
-  top: 0px;
-  width: 65px;
-  height: 65px;
-  background-image: linear-gradient(45deg, transparent 50%, var(--red) 50%, var(--red) 82%, transparent 82%);
-  margin-top: -1px;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/uikit/icon-badge.svg);
 }
 
-.catalog-item-new::before {
-  content: "new";
-  transform: rotate(45deg);
-  position: absolute;
-  right: 10px;
-  top: 12px;
-  color: var(--white);
-  z-index: 1;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  font-family: "Cuprum", "Tahoma", sans-serif;
-}
 
 .catalog-buy-button {
   background-color: var(--green);
@@ -1036,13 +1031,21 @@
   opacity: 0.5;
 }
 
+.manufacturers-button {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
 .manufacturers-list {
   list-style: none;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin: 25px 0 70px;
+  margin-top: 17px;
+  margin-right: 0px;
+  margin-bottom: 70px;
+  margin-left: 0px;
   list-style: none;
 }
 
@@ -1191,7 +1194,7 @@
   grid-template-columns: 1fr 300px;
   gap: 180px;
   margin-top: 27px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .company-info-block h2 {
