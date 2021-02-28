@@ -447,6 +447,7 @@
   flex-wrap: wrap;
   margin-top: 15px;
   padding: 0px 37px 0px 33px;
+  box-shadow: inset 0 -5px 0 var(--dark-blue);
 }
 
 .main-header-user {
