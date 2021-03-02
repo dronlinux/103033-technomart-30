@@ -1702,7 +1702,10 @@
 .punchers-info {
   background-color: var(--light-grey);
   color: var(--black);
-  padding: 64px 20px 55px;
+  padding-top: 64px;
+  padding-right: 20px;
+  padding-bottom: 71px;
+  padding-left: 20px;
   margin-top: 55px;
   font-size: 13px;
   line-height: 24px;
