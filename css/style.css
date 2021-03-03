@@ -1310,7 +1310,7 @@
 }
 
 .breadcrumbs-list li {
-  margin-right: 40px;
+  margin-right: 42px;
   position: relative;
 }
 
@@ -1682,14 +1682,21 @@
   display: flex;
   gap: 10px;
   padding-left: 0;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .pagination-item {
   color: var(--black);
   border: 1px solid var(--lighter-grey);
-  padding: 10px 15px;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 14px;
   border-radius: 2px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .pagination-next {
