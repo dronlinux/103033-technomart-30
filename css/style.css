@@ -339,7 +339,10 @@
   grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-template-rows: min-content min-content;
   align-items: center;
-  padding: 42px 0 25px 30px;
+  padding-top: 42px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+  padding-left: 30px;
 }
 
 .main-header-description {
@@ -403,7 +406,10 @@
   margin-left: 22px;
   margin-right: 10px;
   margin-top: 5px;
-  padding: 12px 0px 15px 45px;
+  padding-top: 12px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 45px;
   position: relative;
 }
 
@@ -420,8 +426,10 @@
 
 .sign-reg {
   margin-left: 1px;
-  margin-top: 5px;
-  padding: 12px 0px 15px 24px;
+  padding-top: 12px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 24px;
 }
 
 .sign-in:hover,
