@@ -58,6 +58,7 @@
   --beige: #F7F3EC;
   --white-translucent: rgba(255, 255, 255, 0.5);
   --white-more-transparent: rgba(255, 255, 255, 0.3);
+  --basic-grey: #3D546F;
   --grey: #C5C5C5;
   --very-grey: #ABABAB;
   --light-grey: #F1F5F7;
@@ -475,8 +476,9 @@
 
 }
 
+
+
 .header-user {
-  background-image: url(../img/uikit/icon-user.svg);
   width: 20px;
   height: 18px;
   position: absolute;
@@ -484,18 +486,30 @@
   left: 18px;
 }
 
+.header-user:focus {
+  color: var(--grey);
+}
+
 .header-user-name {
   margin-left: 48px;
 }
 
 .header-user-logout {
-  background-image: url(../img/uikit/icon-logout.svg);
-  background-repeat: no-repeat;
   width: 20px;
   height: 18px;
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 16px;
+}
+
+.header-user:hover path,
+.header-user-logout:hover path {
+  fill: var(--basic-grey);
+}
+
+.header-user:focus path,
+.header-user-logout:focus path{
+  fill: var(--grey);
 }
 
 .main-header-user a {
