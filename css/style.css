@@ -2094,6 +2094,9 @@
   border-radius: 2px;
   outline: none;
   resize: none;
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .feedback-popup-controls {
@@ -2117,6 +2120,9 @@
 .feedback-name,
 .feedback-name-input {
   display: block;
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .feedback-name-input [type=text] {
@@ -2127,6 +2133,9 @@
 .feedback-email-input {
   display: block;
   margin-left: 20px;
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .feedback-popup-close {
