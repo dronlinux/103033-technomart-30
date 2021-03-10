@@ -990,23 +990,35 @@
   background-image: url(../img/uikit/icon-badge.svg);
 }
 
+.catalog-item-actions {
+  position: absolute;
+  top: 37px;
+  left: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 164px;
+  visibility: hidden;
+}
+
 
 .catalog-buy-button {
   background-color: var(--green);
   color: var(--white);
   width: 135px;
   height: 38px;
-  position: absolute;
-  left: 50%;
-  margin-left: -67px;
-  top: 35px;
-  padding: 10px 25px;
   box-sizing: border-box;
   border-radius: 3px;
-  visibility: hidden;
   text-transform: uppercase;
+  font-family: "Cuprum", "Tahoma", sans-serif;;
+  font-style: normal;
   font-weight: 400;
-  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .catalog-buy-button:before {
@@ -1015,21 +1027,13 @@
   width: 15px;
   height: 15px;
   background-image: url(../img/uikit/icon-cart.svg);
-  left: 24px;
+  left: 30px;
   top: 10px;
   opacity: 0.3;
 }
 
-.catalog-buy-button::after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  background-color: var(--green-click);
-  border-radius: 3px;
-  bottom: -2px;
-  left: 0;
-  z-index: -1;
+.catalog-buy-button {
+  box-shadow: inset 0 -3px 0 var(--green-click);
 }
 
 .catalog-buy-button:hover {
@@ -1046,21 +1050,25 @@
 }
 
 .catalog-bookmark-button {
+  margin-top: 10px;
+  padding-top: 8px;
+  padding-right: 1px;
+  padding-bottom: 9px;
+  padding-left: 0px;
   border: 3px solid var(--green);
   cursor: pointer;
   width: 135px;
   height: 38px;
-  position: absolute;
-  left: 50%;
-  margin-left: -67px;
-  top: 86px;
   box-sizing: border-box;
   border-radius: 3px;
   background-color: var(--white);
   color: var(--blue);
-  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-family: "Cuprum","Verdana",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  visibility: hidden;
 }
 
 .catalog-bookmark-button:hover {
