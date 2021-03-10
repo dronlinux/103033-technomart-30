@@ -249,10 +249,11 @@
 
 .bookmarks-link {
   color: var(--white);
-  margin-left: -45px;
-  padding: 9px;
-  padding-left: 43px;
-  padding-right: 15px;
+  margin-left: -18px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 44px;
+  padding-right: 35px;
   align-self: start;
   justify-self: center;
   position: relative;
