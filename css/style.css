@@ -60,6 +60,7 @@
   --white-more-transparent: rgba(255, 255, 255, 0.3);
   --basic-grey: #3D546F;
   --grey: #C5C5C5;
+  --grey-filter:#B5B5B5;
   --very-grey: #ABABAB;
   --light-grey: #F1F5F7;
   --popup-grey: #F4F4F4;
@@ -1431,6 +1432,7 @@
   font-size: 17px;
   line-height: 18px;
   display: block;
+  cursor: pointer;
   margin-bottom: 10px;
 }
 
@@ -1570,10 +1572,18 @@
   width: 23px;
   height: 23px;
   border: 2px solid var(--grey);
+  opacity: .7;
   left: -35px;
   top: -3px;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.filter-input-checkbox+label:hover:before,
+.filter-input-checkbox:checked+label:hover::after,
+.filter-input-radio+label:hover:before,
+.filter-input-radio:checked+label:hover::after {
+  opacity: 1;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -1586,6 +1596,7 @@
   background-image: url(../img/uikit/icon-checked.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: .7;
 }
 
 .filter-input-radio {
