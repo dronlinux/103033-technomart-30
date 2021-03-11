@@ -60,7 +60,7 @@
   --white-more-transparent: rgba(255, 255, 255, 0.3);
   --basic-grey: #3D546F;
   --grey: #C5C5C5;
-  --grey-filter:#B5B5B5;
+  --grey-filter: #B5B5B5;
   --very-grey: #ABABAB;
   --light-grey: #F1F5F7;
   --popup-grey: #F4F4F4;
@@ -242,9 +242,9 @@
   color: var(--white);
 }
 
-.search-text:hover + .search-icon,
+.search-text:hover+.search-icon,
 .search-icon:hover,
-.search-text:focus + .search-icon {
+.search-text:focus+.search-icon {
   opacity: 1;
 }
 
@@ -510,7 +510,7 @@
 }
 
 .header-user:focus path,
-.header-user-logout:focus path{
+.header-user-logout:focus path {
   fill: var(--grey);
 }
 
@@ -1012,7 +1012,8 @@
   box-sizing: border-box;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: "Cuprum", "Tahoma", sans-serif;;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  ;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1065,7 +1066,7 @@
   border-radius: 3px;
   background-color: var(--white);
   color: var(--blue);
-  font-family: "Cuprum","Verdana",sans-serif;
+  font-family: "Cuprum", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1562,7 +1563,7 @@
   font-size: 15px;
 }
 
-.filter-input-checkbox + label:last-child {
+.filter-input-checkbox+label:last-child {
   margin-bottom: 3px;
 }
 
@@ -1584,6 +1585,12 @@
 .filter-input-radio+label:hover:before,
 .filter-input-radio:checked+label:hover::after {
   opacity: 1;
+}
+
+.filter-input-radio:disabled+label,
+.filter-input-checkbox:disabled+label {
+  cursor: default;
+  opacity: 0.2;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -2107,7 +2114,7 @@
   border-radius: 2px;
   outline: none;
   resize: none;
-  font-family: "PT Sans",Arial,sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2133,7 +2140,7 @@
 .feedback-name,
 .feedback-name-input {
   display: block;
-  font-family: "PT Sans",Arial,sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -2146,7 +2153,7 @@
 .feedback-email-input {
   display: block;
   margin-left: 20px;
-  font-family: "PT Sans",Arial,sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
