@@ -1618,6 +1618,7 @@
   width: 25px;
   height: 25px;
   border: 4px solid var(--grey);
+  opacity: .7;
   border-radius: 50%;
   left: -35px;
   top: -3px;
@@ -1630,6 +1631,7 @@
   width: 9px;
   height: 9px;
   background-color: var(--grey);
+  opacity: .7;
   border-radius: 50%;
   left: -27px;
   top: 5px;
