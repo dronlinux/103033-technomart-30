@@ -475,17 +475,10 @@
   font-size: 21px;
   margin-top: 2px;
   position: relative;
-
 }
 
-
-
 .header-user {
-  width: 20px;
-  height: 18px;
-  position: absolute;
-  top: 15px;
-  left: 18px;
+   padding-left: 50px;
 }
 
 .header-user:focus {
@@ -512,6 +505,12 @@
 .header-user:focus path,
 .header-user-logout:focus path {
   fill: var(--grey);
+}
+
+.header-user-icon {
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 
 .main-header-user a {
@@ -930,7 +929,7 @@
   margin-bottom: 15px;
 }
 
-.catalog-item:hover {
+.catalog-item:hover, catalog-item:focus-within {
   box-shadow: 0 0 10px var(--grey);
 }
 
@@ -942,7 +941,7 @@
   visibility: visible;
 }
 
-.catalog-item:hover img {
+.catalog-item:hover img, .catalog-item:focus-within img {
   visibility: hidden;
 }
 
@@ -1003,7 +1002,6 @@
   visibility: hidden;
 }
 
-
 .catalog-buy-button {
   background-color: var(--green);
   color: var(--white);
@@ -1013,7 +1011,6 @@
   border-radius: 3px;
   text-transform: uppercase;
   font-family: "Cuprum", "Tahoma", sans-serif;
-  ;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
