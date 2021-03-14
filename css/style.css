@@ -945,6 +945,10 @@
   visibility: hidden;
 }
 
+.catalog-item:focus-within .catalog-item-actions,catalog-item:hover .catalog-item-actions {
+  visibility: visible
+}
+
 .catalog-price {
   display: flex;
   justify-self: end;
