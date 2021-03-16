@@ -663,6 +663,8 @@
 }
 
 .promo-materials {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: mats;
   background-color: var(--light-yellow);
 }
@@ -678,6 +680,8 @@
 }
 
 .promo-tools {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: tools;
   background-color: var(--light-blue);
 }
@@ -693,6 +697,8 @@
 }
 
 .promo-technics {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: tech;
   background-color: var(--light-liliac);
 }
@@ -708,6 +714,8 @@
 }
 
 .promo-sale {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: sale;
   background-color: var(--light-green);
 }
@@ -723,6 +731,8 @@
 }
 
 .promo-delivery {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
   grid-area: delivery;
   background-color: var(--light-yellow);
 }
@@ -738,6 +748,10 @@
 }
 
 .slider {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   color: var(--white);
   grid-area: slider;
   position: relative;
