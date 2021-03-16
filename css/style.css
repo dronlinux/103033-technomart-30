@@ -262,7 +262,7 @@
 
 .bookmarks-link::before {
   content: "";
-  background-image: url(../img/uikit/icon-bookmark.svg);
+  background-image: url("../img/uikit/icon-bookmark.svg");
   width: 14px;
   height: 16px;
   position: absolute;
@@ -296,7 +296,7 @@
 }
 
 .basket-link::before {
-  background-image: url(../img/uikit/icon-cart.svg);
+  background-image: url("../img/uikit/icon-cart.svg");
   position: absolute;
   width: 15px;
   height: 15px;
@@ -377,7 +377,7 @@
 
 .main-header-tel::before {
   content: "";
-  background-image: url(../img/uikit/icon-phone.svg);
+  background-image: url("../img/uikit/icon-phone.svg");
   position: absolute;
   height: 19px;
   width: 19px;
@@ -418,7 +418,7 @@
 
 .sign-in::before {
   content: "";
-  background-image: url(../img/uikit/icon-login.svg);
+  background-image: url("../img/uikit/icon-login.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -478,7 +478,7 @@
 }
 
 .header-user {
-   padding-left: 50px;
+  padding-left: 50px;
 }
 
 .header-user:focus {
@@ -619,7 +619,7 @@
   right: 0;
   width: 70px;
   height: 70px;
-  background-image: url(../img/uikit/icon-badge.svg);
+  background-image: url("../img/uikit/icon-badge.svg");
 }
 
 .promo-item h3 {
@@ -676,7 +676,7 @@
   height: 65px;
   top: 31px;
   right: 43px;
-  background-image: url(../img/uikit/bucket.svg);
+  background-image: url("../img/uikit/bucket.svg");
 }
 
 .promo-tools {
@@ -691,7 +691,7 @@
   height: 61px;
   top: 34px;
   right: 31px;
-  background-image: url(../img/uikit/screwdriver.svg);
+  background-image: url("../img/uikit/screwdriver.svg");
 }
 
 .promo-technics {
@@ -706,7 +706,7 @@
   height: 62px;
   top: 31px;
   right: 31px;
-  background-image: url(../img/uikit/tractor.svg);
+  background-image: url("../img/uikit/tractor.svg");
 }
 
 .promo-sale {
@@ -721,7 +721,7 @@
   height: 72px;
   top: 26px;
   right: 45px;
-  background-image: url(../img/uikit/busket.svg);
+  background-image: url("../img/uikit/busket.svg");
 }
 
 .promo-delivery {
@@ -736,7 +736,7 @@
   height: 63px;
   top: 32px;
   right: 30px;
-  background-image: url(../img/uikit/truck.svg);
+  background-image: url("../img/uikit/truck.svg");
 }
 
 .slider {
@@ -819,7 +819,7 @@
 
 .slider-next {
   position: absolute;
-  background-image: url(../img/uikit/icon-slider-left.svg);
+  background-image: url("../img/uikit/icon-slider-left.svg");
   background-repeat: no-repeat;
   top: 122px;
   right: 22px;
@@ -830,7 +830,7 @@
 
 .slider-prev {
   position: absolute;
-  background-image: url(../img/uikit/icon-slider-left.svg);
+  background-image: url("../img/uikit/icon-slider-left.svg");
   background-repeat: no-repeat;
   top: 123px;
   left: 25px;
@@ -924,7 +924,8 @@
   margin-bottom: 15px;
 }
 
-.catalog-item:hover, catalog-item:focus-within {
+.catalog-item:hover,
+catalog-item:focus-within {
   box-shadow: 0 0 10px var(--grey);
 }
 
@@ -936,11 +937,13 @@
   visibility: visible;
 }
 
-.catalog-item:hover img, .catalog-item:focus-within img {
+.catalog-item:hover img,
+.catalog-item:focus-within img {
   visibility: hidden;
 }
 
-.catalog-item:focus-within .catalog-item-actions,catalog-item:hover .catalog-item-actions {
+.catalog-item:focus-within .catalog-item-actions,
+catalog-item:hover .catalog-item-actions {
   visibility: visible
 }
 
@@ -987,7 +990,7 @@
   right: 0;
   width: 70px;
   height: 70px;
-  background-image: url(../img/uikit/icon-badge.svg);
+  background-image: url("../img/uikit/icon-badge.svg");
 }
 
 .catalog-item-actions {
@@ -1025,7 +1028,7 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url(../img/uikit/icon-cart.svg);
+  background-image: url("../img/uikit/icon-cart.svg");
   left: 30px;
   top: 10px;
   opacity: 0.3;
@@ -1173,7 +1176,7 @@
   position: absolute;
   width: 10px;
   height: 279px;
-  background-image: url(../img/uikit/tab-vertical-line.svg);
+  background-image: url("../img/uikit/tab-vertical-line.svg");
   top: -40px;
   right: 0;
 }
@@ -1189,7 +1192,7 @@
   position: absolute;
   width: 468px;
   height: 281px;
-  background-image: url(../img/service-deliver-truck.png);
+  background-image: url("../img/service-deliver-truck.png");
   background-repeat: no-repeat;
   right: 2px;
   bottom: -16px;
@@ -1270,7 +1273,7 @@
 .company-info-block li {
   margin-bottom: 10px;
   list-style: none;
-  background-image: url(../img/uikit/icon-list.svg);
+  background-image: url("../img/uikit/icon-list.svg");
   background-repeat: no-repeat;
   background-position: left 11px;
   padding-left: 37px;
@@ -1341,7 +1344,7 @@
 }
 
 .breadcrumbs-list li::after {
-  background-image: url(../img/uikit/icon-right-small.svg);
+  background-image: url("../img/uikit/icon-right-small.svg");
   background-repeat: no-repeat;
   content: "";
   height: 12px;
@@ -1592,7 +1595,7 @@
   height: 23px;
   left: -31px;
   top: -2px;
-  background-image: url(../img/uikit/icon-checked.svg);
+  background-image: url("../img/uikit/icon-checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: .7;
