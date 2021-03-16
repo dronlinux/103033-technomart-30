@@ -606,9 +606,6 @@
 
 .promo-item {
   min-height: 123px;
-  /* display: grid;
-  grid-template-columns: 135px 1fr;
-  grid-template-rows: 1fr 1fr; */
   padding-top: 20px;
   padding-left: 23px;
   position: relative;
@@ -645,7 +642,6 @@
   box-sizing: border-box;
   display: inline-block;
   background-color: var(--white-more-transparent);
-  /* grid-row: 2/3; */
   text-transform: uppercase;
   color: var(--white);
   font-size: 14px;
@@ -653,7 +649,6 @@
   align-self: center;
   text-align: center;
   min-width: 135px;
-  /* margin-top: -30px; */
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -1121,10 +1116,6 @@
 .manufacturer-item-link:active {
   opacity: 0.5;
 }
-
-/* .services-wrapper {
-  background-color: var(--light-grey);
-} */
 
 .services-block {
   color: var(--black);
@@ -1667,7 +1658,6 @@
   border-radius: 3px;
   padding-right: 2px;
   font-family: "PT Sans", "Tahoma", sans-serif;
-  /* margin-right: -7px; */
 }
 
 .sort-header {
