@@ -1358,7 +1358,6 @@ catalog-item:hover .catalog-item-actions {
 
 .product-header {
   background-color: var(--light-grey);
-  color: var(--basic-blue);
   padding: 27px 30px 30px;
   text-transform: uppercase;
   font-weight: 400;
