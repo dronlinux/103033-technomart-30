@@ -817,23 +817,21 @@
 
 .slider-next {
   position: absolute;
-  background-image: url("../img/uikit/icon-slider-left.svg");
-  background-repeat: no-repeat;
-  top: 122px;
-  right: 22px;
-  width: 21px;
-  height: 40px;
+  background-color: transparent;
+  border: none;
+  top: 117px;
+  right: 14px;
+  cursor: pointer;
   transform: rotate(180deg);
 }
 
 .slider-prev {
   position: absolute;
-  background-image: url("../img/uikit/icon-slider-left.svg");
-  background-repeat: no-repeat;
-  top: 123px;
-  left: 25px;
-  width: 21px;
-  height: 40px;
+  background-color: transparent;
+  border: none;
+  top: 121px;
+  left: 17px;
+  cursor: pointer;
 }
 
 .slide-hidden {
@@ -1257,6 +1255,10 @@ catalog-item:hover .catalog-item-actions {
   line-height: 24px;
   margin-top: 25px;
   margin-bottom: 0;
+}
+
+.company-info-delivery {
+  width: 440px;
 }
 
 .company-info-block ul {

@@ -19,6 +19,7 @@
             <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип 'ТЕХНОМАРТ'">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label for="search-search" aria-label="Поле поиска"></label>
             <input id="search-search" class="search-text" type="search" name="searchQuery" placeholder="Поиск:">
             <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -36,9 +37,9 @@
     <div class="container">
       <section class="main-header-bottom">
         <h1 class="main-header-description">
-          Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта
+          Интернет-магазин
+          строительных материалов
+          и&nbsp;инструментов для ремонта
         </h1>
         <a href="tel:+78125550555" class="main-header-tel">+7 (812) 555-05-55</a>
         <address class="main-header-address">
@@ -51,18 +52,31 @@
     <div class="container">
       <nav class="main-nav">
         <ul class="main-nav-list pf-margin">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="container">
       <section class="promo-block">
@@ -107,13 +121,16 @@
           </div>
           <div class="slider-controls">
             <div class="slider-buttons">
-              <a href="#" class="slider-next" aria-label="Следующий слайд"></a>
-              <a href="#" class="slider-prev" aria-label="Предыдущий слайд"></a>
+              <button class="slider-next" type="button" aria-label="Следующий слайд">
+                <img src="img/uikit/icon-slider-left.svg" width="22" height="40" alt="кнопка Вперед">
+              </button>
+              <button class="slider-prev" type="button" aria-label="Предыдущий слайду">
+                <img src="img/uikit/icon-slider-left.svg" width="22" height="40" alt="кнопка Вперед">
+              </button>
             </div>
             <div class="slider-dot-controls">
               <button class="slider-dot" type="button" aria-label="перейти к первому слайду"></button>
-              <button class="slider-dot slider-dot-current" type="button"
-                aria-label="перейти ко второму слайду"></button>
+              <button class="slider-dot slider-dot-current" type="button" aria-label="перейти ко второму слайду"></button>
             </div>
           </div>
         </div>
@@ -277,11 +294,11 @@
       <div class="index-columns">
         <section class="company-info-block">
           <h2>компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
-            ремонта и строительства не оставит равнодушным любителей сэкономить на<br>
-            гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-            Техномарт работает со многими транспортными компаниями:</p>
+            <p class="company-info-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
+            </p>
+            <p class="company-info-delivery">Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;
+              Техномарт работает со многими транспортными компаниями:
+            </p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -310,11 +327,21 @@
               alt="Логотип 'ТЕХНОМАРТ'"></a>
           <nav class="main-footer-nav">
             <ul>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
           <section class="main-footer-contacts">
@@ -323,10 +350,18 @@
           </section>
           <nav class="main-footer-nav-categories">
             <ul>
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+              <li>
+                <a href="#">Материалы</a>
+              </li>
+              <li>
+                <a href="#">Техника</a>
+              </li>
+              <li>
+                <a href="#">Инструмент</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
             </ul>
           </nav>
         </section>
