@@ -92,11 +92,9 @@
   --smoke: #EAEAEA;
   --slider-back: rgba(0, 0, 0, 0.25);
 
-
   /* footer */
   --smoky-white: #F3F7F9;
   --lighter-yellow: #FFD180;
-
 }
 
 .page {
@@ -1478,7 +1476,6 @@ catalog-item:hover .catalog-item-actions {
   padding-right: 20px;
 }
 
-
 .scale {
   height: 2px;
   background-color: var(--light-grey-blue);
@@ -1695,8 +1692,6 @@ catalog-item:hover .catalog-item-actions {
   padding: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
 }
-
-
 
 .sort-item:hover {
   color: var(--black);
@@ -2194,7 +2189,6 @@ catalog-item:hover .catalog-item-actions {
   height: 66px;
   background-image: url("../img/uikit/icon-popup-mark.svg");
   background-repeat: no-repeat;
-
 }
 
 .basket-text-add {
