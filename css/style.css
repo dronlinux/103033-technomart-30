@@ -2180,7 +2180,7 @@ catalog-item:hover .catalog-item-actions {
   top: 50%;
   left: 50%;
   display: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-47%, -50%);
 }
 
 .basket-popup {
@@ -2232,16 +2232,23 @@ catalog-item:hover .catalog-item-actions {
 
 .basket-buy {
   box-sizing: border-box;
-  min-width: 192px;
-  margin-right: 5px;
-  padding: 10px 10px;
+  width: 192px;
+  height: 38px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
 }
 
 .basket-continue {
   box-sizing: border-box;
-  min-width: 192px;
-  margin-left: 5px;
-  padding: 10px 10px;
+  width: 192px;
+  height: 38px;
+  margin-left: 7px;
+  padding-top: 11px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
   color: var(--black);
   background-color: var(--white);
 }
