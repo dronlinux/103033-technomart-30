@@ -2033,7 +2033,7 @@ catalog-item:hover .catalog-item-actions {
   display: none;
   width: 620px;
   height: 430px;
-  transform: translate(-50%, -50%);
+  transform: translate(-51%, -50%);
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.30));
 }
 
@@ -2097,12 +2097,13 @@ catalog-item:hover .catalog-item-actions {
 
 .feedback-name-item input[type=text],
 .feedback-email-item input[type=email] {
-  padding-left: 10px;
+  padding-left: 9px;
+  padding-bottom: 3px;
   color: var(--black)
 }
 
 .feedback-textarea {
-  padding-left: 8px;
+  padding-left: 9px;
 }
 
 .feedback-textarea-wrapper {
@@ -2113,7 +2114,7 @@ catalog-item:hover .catalog-item-actions {
   box-sizing: border-box;
   width: 460px;
   min-height: 114px;
-  margin-top: 10px;
+  margin-top: 11px;
   border: 2px solid var(--grey);
   border-radius: 2px;
   outline: none;
@@ -2136,7 +2137,7 @@ catalog-item:hover .catalog-item-actions {
   box-sizing: border-box;
   width: 460px;
   min-height: 38px;
-  padding-top: 3px;
+  padding-left: 6px;
   border: none;
   cursor: pointer;
 }
@@ -2144,8 +2145,8 @@ catalog-item:hover .catalog-item-actions {
 .feedback-name,
 .feedback-name-input {
   display: block;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -2157,8 +2158,8 @@ catalog-item:hover .catalog-item-actions {
 .feedback-email-input {
   display: block;
   margin-left: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 18px;
   line-height: 24px;
 }
 
