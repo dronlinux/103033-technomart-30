@@ -2142,11 +2142,17 @@ catalog-item:hover .catalog-item-actions {
   cursor: pointer;
 }
 
-.feedback-name,
-.feedback-name-input {
+.feedback-name {
   display: block;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 18px;
+  line-height: 24px;
+}
+
+.feedback-name-input {
+  display: block;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
   line-height: 24px;
 }
 
@@ -2154,12 +2160,19 @@ catalog-item:hover .catalog-item-actions {
   padding: 30px;
 }
 
-.feedback-email,
-.feedback-email-input {
+.feedback-email {
   display: block;
   margin-left: 20px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 18px;
+  line-height: 24px;
+}
+
+.feedback-email-input {
+  display: block;
+  margin-left: 20px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
   line-height: 24px;
 }
 
